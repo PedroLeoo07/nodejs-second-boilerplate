@@ -23,7 +23,23 @@ class UsersRepository{
         if (!user){
             return null
         }
-    }
-}
 
+        return user
+    }
+        
+         updateUser(id, name, email, password){
+            const user = this.getUserById(id)
+
+            if(!user){
+                return null
+            }
+                user.name = name
+                user.email = email
+                user.password = password
+
+                return user
+            }
+
+
+}
 export default UsersRepository
