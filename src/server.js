@@ -12,5 +12,5 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(serverPort, () => {
-  console.log(`⚡ Server started on http://localhost:${serverPort}`);
+  console.log(`⚡ Servidor tá bala e vai curintia 🖤🤍 http://localhost:${serverPort}`);
 });
